@@ -1,0 +1,22 @@
+body {
+    background-color: #000;
+    text-align: center;
+    font-size: 5em;
+    user-select: none;
+  }
+
+  .h1-text {
+    color: #fff;
+    letter-spacing: -20px;
+    cursor: pointer;
+  }
+
+  .h1-text:hover span {
+    position: relative;
+    text-shadow: 10px 0 10px #000;
+  }
+  .as{
+    color: #fff;
+    position: relative;
+    border:500px;
+  }

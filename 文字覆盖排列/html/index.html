@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文字覆盖排列</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <h1 id="h1" class="h1-text">龙马精神</h1>
+    <p class="as">Wishing you prosperity</p>
+</body>
+
+</html>
+<script>
+  const h1Dom = document.getElementById('h1')
+  const text = h1Dom.textContent
+  const newText = text.split('').map((c, i) => `<span style="z-index: ${text.length - i}">${c}</span>`).join('')
+  h1Dom.innerHTML = newText
+</script>
